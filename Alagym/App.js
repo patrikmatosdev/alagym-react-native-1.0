@@ -1,16 +1,24 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import { StatusBar } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-//import Routes from './src/pages/routes/Routes';
-import RoutesBottom from './src/pages/routes/RoutesBottom';
+// import AppStack from './src/pages/routes/AppStack';
+import BottomStack from './src/routes/BottomStack';
 
 const App = () => {
+  const logado = true;
+
   return (
-    <NavigationContainer>
-      <StatusBar barStyle={"light-content"} />
-      <RoutesBottom />
-    </NavigationContainer>
+    <>
+      {/*
+        <NavigationContainer>
+          <AppStack />
+        </NavigationContainer>
+      */}
+
+      <NavigationContainer>
+        {!!logado && <BottomStack />}
+      </NavigationContainer>
+    </>
   );
 }
 
