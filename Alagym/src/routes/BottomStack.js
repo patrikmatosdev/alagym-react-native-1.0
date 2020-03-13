@@ -21,7 +21,7 @@ export default function MyTabs() {
         name="Home"
         component={Home}
         options={{
-          tabBarLabel: 'Home',
+          tabBarLabel: 'Dashboard',
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="home" color={color} size={size} />
           ),
@@ -31,9 +31,19 @@ export default function MyTabs() {
         name="Training"
         component={Training}
         options={{
-          tabBarLabel: 'Training',
+          tabBarLabel: 'Treinos',
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="home" color={color} size={size} />
+            <MaterialCommunityIcons name="account-details" color={color} size={size} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Help"
+        component={Help}
+        options={{
+        tabBarLabel: 'Help',
+        tabBarIcon: ({ color, size }) => (
+          <MaterialCommunityIcons name="stack-exchange" color={color} size={size} />
           ),
         }}
       />
@@ -43,17 +53,7 @@ export default function MyTabs() {
         options={{
           tabBarLabel: 'Profile',
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="home" color={color} size={size} />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="Help"
-        component={Help}
-        options={{
-          tabBarLabel: 'Help',
-          tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="home" color={color} size={size} />
+            <MaterialCommunityIcons name="face-profile" color={color} size={size} />
           ),
         }}
       />
