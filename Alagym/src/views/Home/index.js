@@ -1,7 +1,8 @@
 import React from 'react';
-import { Text, View, Button, StatusBar, StyleSheet } from 'react-native';
+import { Text, View, StatusBar, StyleSheet, ScrollView } from 'react-native';
 import Table from '../../components/Dashboard/Table';
-import ProxTrainning from '../../components/Dashboard/ProxTrainning';
+import ImageTrainning from '../../components/Dashboard/ImageTrainning';
+
 
 const styles = StyleSheet.create({
   Wrapper:{
@@ -22,20 +23,21 @@ const styles = StyleSheet.create({
 
 export default function Home(props) {
 
-  const openHelp = () => {
-    props.navigation.navigate('Help', {
+  /*const openHelp = () => {
+    props.navigation.navigate('Trainning', {
       mensagem: "E ai, mensagem da HOME"
     });
-  }
+  }*/
 
   return (
     <View style={styles.Wrapper}>
-      <StatusBar backgroundColor="red" barStyle="light-content" />
-      <Text style={styles.Greeting}>Boa tarde,</Text>
-      <Text style={styles.Name}>Patrik !</Text>
-      <Table />
-      <ProxTrainning />
-      <Button title="Abrir HELP" onPress={openHelp} />
+      <ScrollView>
+        <StatusBar backgroundColor="#24292e" barStyle="dark-content"/>
+        <Text style={styles.Greeting}>Boa tarde,</Text>
+        <Text style={styles.Name}>Patrik !</Text>
+        <Table />
+        <ImageTrainning />
+      </ScrollView>
     </View>
   )
 }

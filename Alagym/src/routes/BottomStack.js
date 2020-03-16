@@ -8,18 +8,20 @@ import Profile from '../views/Profile/index';
 
 const Tab = createBottomTabNavigator();
 
+
 export default function MyTabs() {
   return (
     <Tab.Navigator
       initialRouteName="Home"
       tabBarOptions={{
-        activeTintColor: '#e91e63',
+        activeTintColor: '#ff8c00',
       }}
     >
       <Tab.Screen
         name="Home"
         component={Home}
         options={{
+          
           tabBarLabel: 'Dashboard',
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="home" color={color} size={size} />
