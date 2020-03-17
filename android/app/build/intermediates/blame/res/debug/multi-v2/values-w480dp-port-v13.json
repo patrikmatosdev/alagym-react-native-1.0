@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/p/Documentos/Projects/reactNative/myApp/Alagym/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w480dp-port-v13/values-w480dp-port-v13.xml",
+            "outputFile": "/home/p/Documentos/Projects/reactNative/alagym/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w480dp-port-v13/values-w480dp-port-v13.xml",
             "map": [
                 {
                     "source": "/home/p/.gradle/caches/transforms-2/files-2.1/8d0c2fe2f71e02e023fe90e486d4d1fd/res/values-w480dp-port-v13/values-w480dp-port-v13.xml",

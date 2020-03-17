@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/p/Documentos/Projects/reactNative/myApp/Alagym/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tr/values-tr.xml",
+            "outputFile": "/home/p/Documentos/Projects/reactNative/alagym/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tr/values-tr.xml",
             "map": [
                 {
                     "source": "/home/p/.gradle/caches/transforms-2/files-2.1/22c230df7d6214bdc1a272496eedbb32/res/values-tr/values-tr.xml",
