@@ -1,40 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Text, View, StyleSheet } from 'react-native';
+//import fetchExercicies from '../../api/fetchExercicies';
+
+
+const axios = require('axios');
 
 
 export default function Training() {
 
-  const [listExercicies, setListExercicies] = useState([
-    {
-      key: 1,
-      type: 'Cardio Vascular',
-      description: 'Esteira, Bicicleta....',
-      conclusion: 'Treino Concluido: 16/03/2020'
-    },
-    { 
-      key: 2,
-      type: 'Treino A',
-      description: 'Abdomen, Bíceps, Dorsal, Ombro',
-      conclusion: 'Treino concluido: 16/03/2020 as 23h'
-    },
-    {
-      key: 3,
-      treino: 'Treino B',
-      description: 'Abdômen, Funcional, Pernas',
-      conclusion: 'Treino concluido: 16/03/2020 as 23h'
-    },
-    {
-      key: 4,
-      treino: 'Treino C',
-      description: 'Lombar, Ombro, Peitoral, Tríceps',
-      conclusion: 'Treino concluido: 16/03/2020 as 23h'
-    },
-  ]);
+  const [exercicies, setExercicies] = useState();
+
+  useEffect(() => {
+    axios.get('http://192.168.1.69:3030/exercicies').then(resp => {
+      setExercicies(resp.data);
+    })
+  }, [])
+     
+
 
   return (
     <View style={styles.Wrapper}>
-      <Text>Training</Text>
-      <Text>Training</Text>
+      <Text>{JSON.stringify(exercicies)}</Text>
+      <Text>s</Text>
     </View>
   )
 }
