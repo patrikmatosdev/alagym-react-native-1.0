@@ -1,35 +1,74 @@
 import React, { useState, useEffect } from 'react';
 import { Text, View, StyleSheet } from 'react-native';
-//import fetchExercicies from '../../api/fetchExercicies';
-
+import { ScrollView } from 'react-native-gesture-handler';
+import Exercise from '../../components/Exercises';
 
 const axios = require('axios');
 
+const styles = StyleSheet.create({
+  Wrapper: {
+    flex: 1,
+    borderRadius: 4,
+    backgroundColor: '#24292e',
+  },
+
+  Header: {
+   paddingVertical: 20,
+   paddingHorizontal: 25,
+  },
+
+  Title: {
+    fontSize: 22,
+    fontFamily: 'Tahoma', 
+    color: "#FAFAFA"
+  }
+})
 
 export default function Training() {
 
-  const [exercicies, setExercicies] = useState();
+  const [exercise, setExercises] = useState([]);
+  
+  const onPressExercise = (title) => {
+    alert('Campo selecionado ' + title);
+  }
 
   useEffect(() => {
-    axios.get('http://192.168.1.69:3030/exercicies').then(resp => {
-      setExercicies(resp.data);
+    axios.get('http://192.168.1.69:3030/exercises').then(resp => {
+      setExercises(resp.data);
+      //alert(JSON.stringify(exercise))
     })
   }, [])
      
-
-
   return (
-    <View style={styles.Wrapper}>
-      <Text>{JSON.stringify(exercicies)}</Text>
-      <Text>s</Text>
-    </View>
+    <ScrollView>
+      <View style={styles.Wrapper}>
+        <View style={styles.Header}>
+          <Text style={styles.Title}>Abdomen, Bíceps, Dorsal, Ombro</Text>
+        </View>
+
+        {
+          exercise.map((item) => {
+          
+            const serie = item.series && item.series.serie || '';
+            const repetitions = item.series && item.series.repetitions || '';
+            const image = item.media && item.media.img || '';
+            
+            return (
+              <Exercise
+                onPress={onPressExercise} 
+                key={item.id}
+                title={item.title || '-'}
+                machine={item.machine || '-'}
+                colors={item.colors || '-'}
+                image={image}
+                serie={serie}
+                repetitions={repetitions}
+              />
+            )
+          })
+        }
+      </View>
+    </ScrollView>
   )
 }
 
-const styles = StyleSheet.create({
-  Wrapper: {
-    padding: 15,
-    borderRadius: 4,
-    backgroundColor: '#FAFAFA',
-  }
-})
