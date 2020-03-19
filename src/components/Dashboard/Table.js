@@ -6,7 +6,7 @@ import { DataTable } from 'react-native-paper';
 export default function Table() {
 
   const [listExercicies, setlistExercicies] = useState([
-    {name: 'Zumba', key: 1, category: 'Ritimos', hour: '18:00'},
+    {name: 'Zumba', key: 1, category: 'Ritmos', hour: '18:00'},
     {name: 'Abodminal', key: 2, category: 'Exercícios', hour: '18:30'},
     {name: 'B. Combat', key: 3, category: 'Luta', hour: '19:00'},
     {name: 'Alogamento', key: 4, category: 'Exercícios', hour: '19:30'},
