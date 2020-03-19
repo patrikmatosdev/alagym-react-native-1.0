@@ -10,14 +10,25 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fffafa',
   },
+
+  Table: {
+    marginVertical: 10,
+    flex: 1,
+  },
+
+  Media:{
+    flex: 1,  
+  },
+
   Greeting: {
     fontWeight: 'bold',
-    fontSize: 12,
+    fontSize: 14,
     color: '#a9a9a9',
   },
+
   Name: {
     fontWeight: "bold",
-    fontSize: 18,
+    fontSize: 22,
   }
 })
 
@@ -32,11 +43,16 @@ export default function Home(props) {
   return (
     <View style={styles.Wrapper}>
       <ScrollView>
-        <StatusBar backgroundColor="#24292e" barStyle="dark-content"/>
-        <Text style={styles.Greeting}>Boa tarde,</Text>
-        <Text style={styles.Name}>Patrik !</Text>
-        <Table />
-        <ImageTrainning />
+        <View>
+          <Text style={styles.Greeting}>Boa tarde,</Text>
+          <Text style={styles.Name}>Patrik !</Text>
+        </View>
+        <View style={styles.Table}>
+          <Table />
+        </View>
+        <View style={styles.Media}>
+          <ImageTrainning />
+        </View>
       </ScrollView>
     </View>
   )

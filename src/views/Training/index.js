@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
-import Exercise from '../../components/Exercises';
+import Exercise from '../../components/Exercises/Exercises';
 
 const axios = require('axios');
 
 const styles = StyleSheet.create({
   Wrapper: {
     flex: 1,
-    borderRadius: 4,
     backgroundColor: '#24292e',
   },
 
@@ -43,7 +42,7 @@ export default function Training() {
     <ScrollView>
       <View style={styles.Wrapper}>
         <View style={styles.Header}>
-          <Text style={styles.Title}>Abdomen, Bíceps, Dorsal, Ombro</Text>
+          <Text style={styles.Title}>Todos os Exercicios</Text>
         </View>
 
         {
