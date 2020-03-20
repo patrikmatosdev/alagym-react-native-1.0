@@ -1,14 +1,15 @@
 import React from 'react';
-import { Text, View, StatusBar, StyleSheet, ScrollView } from 'react-native';
+import { Text, View, StatusBar, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
 import Table from '../../components/Dashboard/Table';
 import ImageTrainning from '../../components/Dashboard/ImageTrainning';
+import { useNavigation } from '@react-navigation/native';
 
 
 const styles = StyleSheet.create({
   Wrapper:{
     padding: 15,
     flex: 1,
-    backgroundColor: '#fffafa',
+    backgroundColor: '#FAFAFA',
   },
 
   Table: {
@@ -29,16 +30,16 @@ const styles = StyleSheet.create({
   Name: {
     fontWeight: "bold",
     fontSize: 22,
+    color: 'orange'
   }
 })
 
-export default function Home(props) {
+export default function Home() {
 
-  /*const openHelp = () => {
-    props.navigation.navigate('Trainning', {
-      mensagem: "E ai, mensagem da HOME"
-    });
-  }*/
+  const navigation = useNavigation();
+  const openTraining = routeName => {
+    navigation.navigate(routeName);
+  }
 
   return (
     <View style={styles.Wrapper}>
@@ -50,8 +51,15 @@ export default function Home(props) {
         <View style={styles.Table}>
           <Table />
         </View>
+
         <View style={styles.Media}>
+          <TouchableOpacity 
+            style={styles.WrapperImg} 
+            activeOpacity={.5} 
+            onPress={()=> openTraining('Training')}
+          >
           <ImageTrainning />
+        </TouchableOpacity>
         </View>
       </ScrollView>
     </View>

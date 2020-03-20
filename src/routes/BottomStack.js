@@ -15,13 +15,17 @@ export default function MyTabs() {
       initialRouteName="Home"
       tabBarOptions={{
         activeTintColor: '#ff8c00',
+        tabStyle: {
+          backgroundColor: '#24292e'
+        }  
       }}
+      
+
     >
       <Tab.Screen
         name="Home"
         component={Home}
         options={{
-          
           tabBarLabel: 'Dashboard',
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="home" color={color} size={size} />
