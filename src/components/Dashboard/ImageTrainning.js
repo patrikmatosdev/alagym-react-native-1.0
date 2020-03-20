@@ -35,7 +35,7 @@ export default function ImageTrainning(props) {
   return (
     <View style={styles.Wrapper}>
       <Text style={styles.Title}>Próximos Treinos</Text>
-      <TouchableOpacity 
+      <View 
         style={styles.WrapperImg} 
         activeOpacity={.5} 
         onPress={openTraining}
@@ -44,7 +44,7 @@ export default function ImageTrainning(props) {
           source={require('./../../assets/img/person-holding.jpg')} 
           style={styles.File}
         />
-      </TouchableOpacity>
+      </View>
     </View>
   )
 }
