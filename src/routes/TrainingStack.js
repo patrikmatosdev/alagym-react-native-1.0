@@ -4,15 +4,6 @@ import MyWorkouts from '../components/MyWorkouts/index';
 import TypeExercises from '../components/MyWorkouts/TypeExercisies';
 import TrainingDetail from '../components/MyWorkouts/TrainingDetail';
 
-// const TrainingStack = (NavigationContainer(
-//   createStackNavigator({
-//     MyWorkouts: MyWorkouts,
-//     TypeExercisies: TypeExercisies,
-//   })
-// ))
-
-// export default TrainingStack;
-
 
 const Stack = createStackNavigator();
 
