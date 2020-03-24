@@ -1,45 +1,15 @@
 import React from 'react';
-import { Text, View, StatusBar, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
-import Table from '../../components/Dashboard/Table';
-import ImageTrainning from '../../components/Dashboard/ImageTrainning';
+import { Text, View, ScrollView, TouchableOpacity } from 'react-native';
+import Table from '../../components/Dashboard/Table/';
 import { useNavigation } from '@react-navigation/native';
-
-
-const styles = StyleSheet.create({
-  Wrapper:{
-    padding: 15,
-    flex: 1,
-    backgroundColor: '#FAFAFA',
-  },
-
-  Table: {
-    marginVertical: 10,
-    flex: 1,
-  },
-
-  Media:{
-    flex: 1,  
-  },
-
-  Greeting: {
-    fontWeight: 'bold',
-    fontSize: 14,
-    color: '#a9a9a9',
-  },
-
-  Name: {
-    fontWeight: "bold",
-    fontSize: 22,
-    color: 'orange'
-  }
-})
+import TouchableTrainning from '../../components/Dashboard/TouchableImage/index';
+import styles from './styles';
 
 export default function Home() {
-
   const navigation = useNavigation();
-  const openTraining = routeName => {
+  const openTraining = (routeName) => {
     navigation.navigate(routeName);
-  }
+  };
 
   return (
     <View style={styles.Wrapper}>
@@ -53,15 +23,15 @@ export default function Home() {
         </View>
 
         <View style={styles.Media}>
-          <TouchableOpacity 
-            style={styles.WrapperImg} 
-            activeOpacity={.5} 
-            onPress={()=> openTraining('Training')}
+          <TouchableOpacity
+            style={styles.WrapperImg}
+            activeOpacity={0.5}
+            onPress={() => openTraining('Training')}
           >
-          <ImageTrainning />
-        </TouchableOpacity>
+            <TouchableTrainning />
+          </TouchableOpacity>
         </View>
       </ScrollView>
     </View>
-  )
+  );
 }
