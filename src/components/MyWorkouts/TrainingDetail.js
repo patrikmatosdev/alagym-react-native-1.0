@@ -1,19 +1,28 @@
-import  React  from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React from 'react';
+import { StyleSheet, ImageBackground } from 'react-native';
+import personBackground from '../../assets/img/background.jpeg';
+import Swiper from 'react-native-swiper';
+import ExerciseSlide from './ExerciseSlide';
+import BoxOverlay from '../BoxOverlay';
 
 export default function TrainingDetail() {
-  return(
-    <View style={styles.container}>
-      <Text style={styles.text}>1</Text>
-    </View>
-  )
+  return (
+    <ImageBackground source={personBackground} style={styles.container}>
+      <BoxOverlay />
+      <Swiper style={styles.swiper}>
+        <ExerciseSlide />
+        <ExerciseSlide />
+        <ExerciseSlide />
+        <ExerciseSlide />
+      </Swiper>
+    </ImageBackground>
+  );
 }
 
 const styles = StyleSheet.create({
-  container:{},
-  text: {
-    color: 'black',
-    fontSize: 30,
-    fontWeight: 'bold'
-  }
-})
+  container: {
+    flex: 1,
+  },
+
+  swiper: {},
+});
