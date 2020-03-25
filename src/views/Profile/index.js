@@ -1,11 +1,6 @@
 import React from 'react';
-import { Text, View } from 'react-native';
-
+import WorkoutEditor from '../../components/WorkoutEditor/index';
 
 export default function Profile() {
-  return (
-    <View>
-      <Text>Profile</Text>
-    </View>
-  )
+  return <WorkoutEditor />;
 }

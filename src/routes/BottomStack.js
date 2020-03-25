@@ -8,7 +8,6 @@ import Profile from '../views/Profile/index';
 
 const Tab = createBottomTabNavigator();
 
-
 export default function MyTabs() {
   return (
     <Tab.Navigator
@@ -16,11 +15,9 @@ export default function MyTabs() {
       tabBarOptions={{
         activeTintColor: '#ff8c00',
         tabStyle: {
-          backgroundColor: '#24292e'
-        }  
+          backgroundColor: '#24292e',
+        },
       }}
-      
-
     >
       <Tab.Screen
         name="Home"
@@ -38,7 +35,11 @@ export default function MyTabs() {
         options={{
           tabBarLabel: 'Treinos',
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="account-details" color={color} size={size} />
+            <MaterialCommunityIcons
+              name="account-details"
+              color={color}
+              size={size}
+            />
           ),
         }}
       />
@@ -46,9 +47,13 @@ export default function MyTabs() {
         name="Help"
         component={Help}
         options={{
-        tabBarLabel: 'Help',
-        tabBarIcon: ({ color, size }) => (
-          <MaterialCommunityIcons name="stack-exchange" color={color} size={size} />
+          tabBarLabel: 'Help',
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons
+              name="stack-exchange"
+              color={color}
+              size={size}
+            />
           ),
         }}
       />
@@ -58,7 +63,11 @@ export default function MyTabs() {
         options={{
           tabBarLabel: 'Profile',
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="face-profile" color={color} size={size} />
+            <MaterialCommunityIcons
+              name="face-profile"
+              color={color}
+              size={size}
+            />
           ),
         }}
       />
