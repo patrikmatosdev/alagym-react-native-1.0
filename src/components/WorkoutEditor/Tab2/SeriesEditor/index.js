@@ -1,18 +1,63 @@
-import React, { useState } from 'react';
-import { View, Text } from 'react-native';
+import React from 'react';
+import { View, Text, Image } from 'react-native';
 import styles from './styles';
-import { TextInput } from 'react-native-paper';
-import { Button, ListItem } from 'react-native-elements';
+import { Icon } from 'react-native-elements';
+import IMG from '../../../../assets/img/background.jpeg';
+import IMG2 from '../../../../assets/img/peitoral.png';
 
 export default function SeriesEditor(props) {
   const value = props.value;
 
   return (
-    <View>
-      {value.map((item, index) => {
-        const title = `Serie ${index + 1}`;
-        return <ListItem key={index} title={title} />;
-      })}
+    <View style={styles.container}>
+      <View style={styles.header}>
+        <View style={styles.boxImage}>
+          <View style={styles.boxTitle}>
+            <Text style={styles.title}>MUSCULO</Text>
+          </View>
+          <View style={styles.media}>
+            <Image source={IMG2} style={styles.image} />
+          </View>
+        </View>
+
+        <View style={styles.boxImage}>
+          <View style={styles.boxTitle}>
+            <Text style={styles.title}>EXERCICIO</Text>
+          </View>
+          <View style={styles.media}>
+            <Image source={IMG} style={styles.image} />
+          </View>
+        </View>
+      </View>
+
+      <View style={styles.series}>
+        <View style={styles.titleContent}>
+          <View style={styles.titleOptions}>
+            <Text style={styles.label}>séries</Text>
+          </View>
+          <View style={styles.titleOptions}>
+            <Text style={styles.label}>repetições</Text>
+          </View>
+        </View>
+
+        <View style={styles.optionsSeries}>
+          <View style={styles.titleOptions}>
+            <Text style={styles.label}>serie 1</Text>
+          </View>
+
+          <View style={styles.options}>
+            <View style={styles.button}>
+              <Icon name="remove-circle-outline" color={'#4b4'} size={32} />
+            </View>
+            <View style={styles.button}>
+              <Text>16</Text>
+            </View>
+            <View style={styles.button}>
+              <Icon name="add-circle-outline" color={'#4b4'} size={32} />
+            </View>
+          </View>
+        </View>
+      </View>
     </View>
   );
 }
