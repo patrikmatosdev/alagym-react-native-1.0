@@ -1,19 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View } from 'react-native';
-//import styles from './ListOfWorkouts/styles';
-//import ListOfWorkouts from './ListOfWorkouts';
 import StudentPicker from './StudentPicker';
+import ListOfWorkouts from './ListOfWorkouts';
+//import styles from './ListOfWorkouts/styles';
 
 export default function MyWorkouts() {
-  /*return (
-    <View style={styles.Container}>
-      <ListOfWorkouts />
-    </View>
-  );*/
+  const [showStudentsList, setShowStudentsList] = useState(false);
 
   return (
     <View style={{ flex: 1 }}>
-      <StudentPicker />
+      <StudentPicker
+        onToggleList={(show) => setShowStudentsList(show)}
+        showList={showStudentsList}
+      />
+      {!showStudentsList && <ListOfWorkouts />}
     </View>
   );
 }

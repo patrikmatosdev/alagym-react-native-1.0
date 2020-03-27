@@ -1,27 +1,35 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import { Appbar, TextInput } from 'react-native-paper';
+import { TextInput } from 'react-native-paper';
 import styles from './styles';
-import ListStudents from './ListStudents';
+import StudentItem from './StudentItem';
 
-export default function StudentPicker() {
+export default function StudentPicker(props) {
+  const onFocusInput = () => {
+    props.onToggleList(true);
+  };
+
+  const onBlurInput = () => {
+    props.onToggleList(false);
+  };
+
   return (
     <View style={styles.container}>
-      <View style={styles.containerContent}>
-        <View style={styles.containerInputs}>
-          <TextInput
-            type="outlined"
-            label="Buscar Alunos"
-            placeholder="Ex: Patrik Matos"
-          />
-        </View>
+      <TextInput
+        onFocus={onFocusInput}
+        onBlur={onBlurInput}
+        type="outlined"
+        label="Buscar Alunos"
+        placeholder="Ex: Patrik Matos"
+      />
+
+      {!!props.showList && (
         <View style={styles.containerList}>
-          <ListStudents />
-          <ListStudents />
-          <ListStudents />
-          <ListStudents />
+          <StudentItem />
+          <StudentItem />
+          <StudentItem />
         </View>
-      </View>
+      )}
     </View>
   );
 }

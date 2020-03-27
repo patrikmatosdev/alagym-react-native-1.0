@@ -3,7 +3,7 @@ import { ListItem, Icon } from 'react-native-elements';
 import foto from '../../../../assets/img/background.jpeg';
 import { TouchableOpacity } from 'react-native';
 
-export default function ListStudents() {
+export default function StudentItem() {
   const onDetails = () => {
     alert('Em desenvolivmento');
   };
