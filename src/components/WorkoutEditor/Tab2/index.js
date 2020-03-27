@@ -87,10 +87,8 @@ export default function Tab2() {
           );
         })
       ) : (
-        <>
-          <ModeExercise onChange={(mode) => setMode(mode)} value={mode} />
-          <SeriesEditor value={series} />
-        </>
+        //<ModeExercise onChange={(mode) => setMode(mode)} value={mode} />
+        <SeriesEditor value={series} />
       )}
     </View>
   );

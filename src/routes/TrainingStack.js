@@ -6,6 +6,7 @@ import {
 import MyWorkouts from '../components/MyWorkouts/index';
 import TypeExercises from '../components/MyWorkouts/TypeExercises';
 import ExerciseDetails from '../components/MyWorkouts/ExerciseDetails';
+import StudentPicker from '../components/MyWorkouts/StudentPicker';
 
 const Stack = createStackNavigator();
 
@@ -27,7 +28,14 @@ export default function TrainingStack() {
           headerTitleStyle: 'bold',
         }}
       />
-
+      <Stack.Screen
+        name="StudentPicker"
+        component={StudentPicker}
+        options={{
+          title: 'Cadastrar Treinos',
+          headerTitleStyle: 'bold',
+        }}
+      />
       <Stack.Screen
         name="TypeExercises"
         component={TypeExercises}

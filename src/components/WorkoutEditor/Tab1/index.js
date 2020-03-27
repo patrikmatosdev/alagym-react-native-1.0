@@ -40,9 +40,6 @@ export default function Tab1() {
         label="Duração (12 semanas)"
         placeholder="10"
       />
-      <Dropdown label="Objetivo" data={typesTraining} />
-
-      <List.Section></List.Section>
     </View>
   );
 }

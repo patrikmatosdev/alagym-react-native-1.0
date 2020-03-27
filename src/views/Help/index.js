@@ -1,6 +1,5 @@
 import React from 'react';
-import WorkoutEditor from '../../components/WorkoutEditor/index';
-
+import MyWorkouts from '../../components/MyWorkouts/index';
 export default function Help() {
-  return <WorkoutEditor />;
+  return <MyWorkouts />;
 }
