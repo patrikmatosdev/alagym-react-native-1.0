@@ -2,40 +2,23 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 15,
-    flexDirection: 'column',
+    flex: 1,
     borderRadius: 5,
+    flexDirection: 'column',
     overflow: 'hidden',
   },
 
-  containerTitle: {
-    padding: 10,
-    backgroundColor: 'green',
-    flexDirection: 'row',
-  },
-
-  title: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'center',
-  },
-
-  label: {
-    fontSize: 18,
-    color: '#fafafa',
-  },
-
   containerSerie: {
-    flex: 1,
     padding: 15,
-    backgroundColor: '#ddd',
+    backgroundColor: '#fafafa',
     flexDirection: 'row',
-    justifyContent: 'center',
+    borderBottomWidth: 1,
+    borderBottomColor: '#ccc',
   },
 
   containerLabel: {
     flex: 1,
-    alignSelf: 'center',
+    //alignSelf: 'center',
   },
 
   containerOptions: {

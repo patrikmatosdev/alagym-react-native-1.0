@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { View } from 'react-native';
 import StudentPicker from './StudentPicker';
 import ListOfWorkouts from './ListOfWorkouts';
-//import styles from './ListOfWorkouts/styles';
 
 export default function MyWorkouts() {
   const [showStudentsList, setShowStudentsList] = useState(false);

@@ -11,7 +11,8 @@ export default function TabsWorkoutsEditor() {
       initialRouteName="Tab1"
       tabBarOptions={{
         activeTintColor: '#FAFAFA',
-        labelStyle: { fontSize: 12 },
+        labelStyle: { fontSize: 14 },
+        indicatorStyle: { backgroundColor: '#ff8c00' },
         style: { backgroundColor: '#24292e' },
       }}
     >

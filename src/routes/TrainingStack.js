@@ -8,7 +8,7 @@ import TypeExercises from '../components/MyWorkouts/TypeExercises';
 import ExerciseDetails from '../components/MyWorkouts/ExerciseDetails';
 import StudentPicker from '../components/MyWorkouts/StudentPicker';
 import WorkoutEditor from '../components/WorkoutEditor/index';
-import { IconButton } from 'react-native-paper';
+import { IconButton, Button, Icon } from 'react-native-paper';
 import { useNavigation } from '@react-navigation/native';
 
 const Stack = createStackNavigator();
@@ -61,12 +61,17 @@ export default function TrainingStack() {
           title: 'Meus Exercicios',
 
           headerRight: () => (
-            <IconButton
-              color="#ccc"
-              icon="dots-vertical"
-              size={32}
+            <Button
               onPress={() => openStudentsTraining('WorkoutEditor')}
-            />
+              icon="account-edit"
+              mode="outlined"
+              color="#fafafa"
+              style={{ marginRight: 10, borderColor: '#fafafa' }}
+              labelStyle={{ color: '#fafafa' }}
+              contentStyle={{ backgroundColor: null }}
+            >
+              Editar
+            </Button>
           ),
         }}
       />

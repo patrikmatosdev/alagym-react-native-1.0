@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
   },
 
   boxTitle: {
+    marginTop: 15,
     marginBottom: 5,
   },
 
