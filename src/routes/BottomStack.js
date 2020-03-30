@@ -47,7 +47,7 @@ export default function MyTabs() {
         name="Help"
         component={Help}
         options={{
-          tabBarLabel: 'Instrutor',
+          tabBarLabel: 'Chat',
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons
               name="stack-exchange"

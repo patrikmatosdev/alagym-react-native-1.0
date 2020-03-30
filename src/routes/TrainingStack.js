@@ -7,10 +7,19 @@ import MyWorkouts from '../components/MyWorkouts/index';
 import TypeExercises from '../components/MyWorkouts/TypeExercises';
 import ExerciseDetails from '../components/MyWorkouts/ExerciseDetails';
 import StudentPicker from '../components/MyWorkouts/StudentPicker';
+import WorkoutEditor from '../components/WorkoutEditor/index';
+import { IconButton } from 'react-native-paper';
+import { useNavigation } from '@react-navigation/native';
 
 const Stack = createStackNavigator();
 
 export default function TrainingStack() {
+  const navigation = useNavigation();
+
+  const openStudentsTraining = (routeName) => {
+    navigation.navigate(routeName);
+  };
+
   return (
     <Stack.Navigator
       initialRouteName="MyWorkouts"
@@ -18,7 +27,7 @@ export default function TrainingStack() {
         headerStyle: {
           backgroundColor: '#24292e',
         },
-        headerTintColor: '#a9a9a9',
+        headerTintColor: '#fafafa',
       }}
     >
       <Stack.Screen
@@ -26,6 +35,14 @@ export default function TrainingStack() {
         component={MyWorkouts}
         options={{
           title: 'Meus treinos',
+          headerTitleStyle: 'bold',
+        }}
+      />
+      <Stack.Screen
+        name="WorkoutEditor"
+        component={WorkoutEditor}
+        options={{
+          title: 'Editor de Treinos',
           headerTitleStyle: 'bold',
         }}
       />
@@ -42,6 +59,15 @@ export default function TrainingStack() {
         component={TypeExercises}
         options={{
           title: 'Meus Exercicios',
+
+          headerRight: () => (
+            <IconButton
+              color="#ccc"
+              icon="dots-vertical"
+              size={32}
+              onPress={() => openStudentsTraining('WorkoutEditor')}
+            />
+          ),
         }}
       />
       <Stack.Screen

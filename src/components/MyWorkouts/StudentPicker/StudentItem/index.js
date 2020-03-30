@@ -5,14 +5,16 @@ import { TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 export default function StudentItem() {
-  const navigation = useNavigation();
+  /* const navigation = useNavigation();
 
   const openStudentsTraining = (routeName) => {
     navigation.navigate(routeName);
   };
 
+  */
+
   return (
-    <TouchableOpacity onPress={() => openStudentsTraining('MyWorkouts')}>
+    <TouchableOpacity onPress={() => alert('Em Desenvolvimento...')}>
       <ListItem
         leftAvatar={{ uri: foto }}
         title={'Patrik Matos'}

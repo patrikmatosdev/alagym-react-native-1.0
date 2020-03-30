@@ -1,5 +1,9 @@
 import React from 'react';
-import MyWorkouts from '../../components/MyWorkouts/index';
+import { Text, View } from 'react-native';
 export default function Help() {
-  return <MyWorkouts />;
+  return (
+    <View>
+      <Text>CHAT</Text>
+    </View>
+  );
 }
