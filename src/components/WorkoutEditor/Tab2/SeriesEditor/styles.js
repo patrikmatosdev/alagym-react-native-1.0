@@ -40,6 +40,12 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: '#fafafa',
   },
+
+  containerSeries: {
+    flex: 1,
+    borderRadius: 7,
+    overflow: 'hidden',
+  },
 });
 
 export default styles;

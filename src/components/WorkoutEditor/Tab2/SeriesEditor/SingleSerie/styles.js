@@ -2,8 +2,6 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    borderRadius: 5,
     flexDirection: 'column',
     overflow: 'hidden',
   },

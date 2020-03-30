@@ -4,6 +4,7 @@ import styles from './styles';
 import CardItem from '../../../CardItem';
 import SingleSerie from './SingleSerie';
 import ButtonEditor from './ButtonEditor';
+import { ScrollView } from 'react-native-gesture-handler';
 
 export default function SeriesEditor(props) {
   const value = props.value;
@@ -19,7 +20,7 @@ export default function SeriesEditor(props) {
             <CardItem />
           </View>
         </View>
-        <View style={{ flex: 1 }}>
+        <View style={styles.containerSeries}>
           <View style={styles.containerTitle}>
             <View style={styles.boxTitle}>
               <Text style={styles.labelTitle}>séries</Text>
@@ -28,7 +29,14 @@ export default function SeriesEditor(props) {
               <Text style={styles.labelTitle}>repetições</Text>
             </View>
           </View>
-          <SingleSerie />
+          <ScrollView>
+            <>
+              <SingleSerie />
+              <SingleSerie />
+              <SingleSerie />
+              <SingleSerie />
+            </>
+          </ScrollView>
         </View>
       </View>
       <View style={styles.containerButton}>
