@@ -18,10 +18,6 @@ export default function TypeExercises() {
   return (
     <ScrollView>
       <View style={styles.Wrapper}>
-        <View style={styles.Header}>
-          <Text style={styles.Title}>Todos os Exercicios</Text>
-        </View>
-
         {exercise.map((item) => {
           const serie = (item.series && item.series.serie) || '';
           const repetitions = (item.series && item.series.repetitions) || '';

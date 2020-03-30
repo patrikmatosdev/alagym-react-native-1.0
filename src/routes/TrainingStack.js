@@ -22,9 +22,10 @@ export default function TrainingStack() {
       }}
     >
       <Stack.Screen
-        name="Meus Treinos"
+        name="MyWorkouts"
         component={MyWorkouts}
         options={{
+          title: 'Meus treinos',
           headerTitleStyle: 'bold',
         }}
       />
