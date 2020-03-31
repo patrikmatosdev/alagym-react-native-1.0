@@ -14,8 +14,9 @@ export default function Tab2() {
   const [exercises, setExercises] = useState([]);
   const [query, setQuery] = useState('');
   const [showExercises, setShowExercises] = useState(false);
-
   const [mode, setMode] = useState(exeMode.Repetitions);
+  const [lineSerie, setLineSerie] = useState();
+
   const [series, setSeries] = useState([
     {
       interval: 60,

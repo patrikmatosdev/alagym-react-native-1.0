@@ -1,10 +1,6 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import ProfileStack from '../../routes/ProfileStack';
 
 export default function Profile() {
-  return (
-    <View>
-      <Text>Profile</Text>
-    </View>
-  );
+  return <ProfileStack />;
 }
