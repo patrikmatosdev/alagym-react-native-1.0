@@ -3,10 +3,10 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 // import AppStack from './src/pages/routes/AppStack';
 import BottomStack from './src/routes/BottomStack';
+import LoadingView from './src/views/Loading/index';
 
 const App = () => {
-
-  const logado = true;
+  const loading = false;
 
   return (
     <>
@@ -17,10 +17,10 @@ const App = () => {
       */}
 
       <NavigationContainer>
-        {!!logado && <BottomStack />}
+        {loading == true ? <BottomStack /> : <LoadingView />}
       </NavigationContainer>
     </>
   );
-}
+};
 
 export default App;
