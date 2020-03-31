@@ -14,10 +14,10 @@ export default function SeriesEditor(props) {
       <View style={styles.content}>
         <View style={styles.containerMedia}>
           <View style={styles.containerCard}>
-            <CardItem />
+            <CardItem title={'Musculo'} />
           </View>
           <View style={styles.containerCard}>
-            <CardItem />
+            <CardItem title={'Exercício'} />
           </View>
         </View>
         <View style={styles.containerSeries}>
