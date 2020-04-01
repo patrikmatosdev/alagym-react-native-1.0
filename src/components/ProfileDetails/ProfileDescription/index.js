@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, Text } from 'react-native';
-import { Input, Icon } from 'react-native-elements';
+import { View } from 'react-native';
+import { Input } from 'react-native-elements';
 import styles from './styles';
 import { IconButton } from 'react-native-paper';
 
@@ -22,7 +22,7 @@ export default function ProfileDescription() {
       </View>
       <View style={styles.containerInput}>
         <Input
-          placeholder="alagym@gmail.com"
+          placeholder="alagym@email.com"
           leftIcon={
             <IconButton icon="at" color="#fafafa" size={28} color="black" />
           }
