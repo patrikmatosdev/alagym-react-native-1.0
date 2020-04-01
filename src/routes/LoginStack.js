@@ -28,7 +28,9 @@ export default function LoginStack() {
         name="UserRegistration"
         component={UserRegistration}
         options={{
-          headerShown: false,
+          headerTransparent: true,
+          headerShown: true,
+          title: 'Login',
         }}
       />
     </Stack.Navigator>
