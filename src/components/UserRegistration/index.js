@@ -18,14 +18,6 @@ export default function UserRegistration() {
         <View style={styles.button}>
           <Button title="Criar Conta" type="clear" />
         </View>
-        <View style={styles.socialIcon}>
-          <SocialIcon
-            raised={true}
-            type="facebook"
-            button
-            title="Entrar com facebook"
-          />
-        </View>
       </View>
     </View>
   );

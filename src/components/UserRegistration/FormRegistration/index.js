@@ -17,14 +17,6 @@ export default function FormRegistration() {
       </View>
       <View style={styles.boxInput}>
         <Input
-          label="Usuario"
-          labelStyle={{ color: '#ff8c00' }}
-          placeholder="patrik"
-          leftIcon={<IconButton icon="account" size={28} color="#ccc" />}
-        />
-      </View>
-      <View style={styles.boxInput}>
-        <Input
           label="CPF"
           labelStyle={{ color: '#ff8c00' }}
           placeholder="999.999.999-99"
