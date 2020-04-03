@@ -3,28 +3,40 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  },
-  containerItems: {
     padding: 25,
+    flexDirection: 'column',
     backgroundColor: '#24292e',
-    //position: 'absolute',
-    //paddingHorizontal: 30,
-    //bottom: 40,
-    //left: 0,
-    //right: 0,
+  },
+  containerHeader: {
+    flexGrow: 0,
+    flexShrink: 0,
+    flexBasis: 330,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  containerItems: {
+    flex: 1,
+  },
+
+  containerInputs: {
+    paddingVertical: 20,
+  },
+
+  containerButtonsText: {
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+  },
+
+  containerSocial: {
+    paddingVertical: 30,
   },
 
   boxInput: {
-    marginBottom: 10,
+    marginBottom: 20,
   },
   boxButton: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    marginVertical: 20,
-  },
-
-  containerButtons: {
-    flexDirection: 'row',
+    marginRight: 15,
   },
 });
 

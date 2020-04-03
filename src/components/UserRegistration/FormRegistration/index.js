@@ -22,7 +22,7 @@ export default function FormRegistration() {
           <InputTextMask
             label="CPF"
             icon="person"
-            placeholder="999.999.999-99"
+            placeholder="CPF: 999.999.999-99"
             mask="[000].[000].[000]-[00]"
             keyboardType="numeric"
           />

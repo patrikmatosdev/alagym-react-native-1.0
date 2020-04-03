@@ -7,8 +7,9 @@ import { Icon } from 'react-native-elements';
 export default function InputTextMask(props) {
   return (
     <TextInput
-      label={props.label}
+      //label={props.label}
       keyboardType={props.keyboardType}
+      placeholder={props.placeholder}
       mode="outlined"
       theme={{
         roundness: 10,
