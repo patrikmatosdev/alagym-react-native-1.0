@@ -10,8 +10,8 @@ export default function InputTextMask(props) {
       label={props.label}
       keyboardType={props.keyboardType}
       mode="outlined"
-      inline
       theme={{
+        roundness: 10,
         colors: {
           primary: '#ff8c00',
           background: '#ffff',

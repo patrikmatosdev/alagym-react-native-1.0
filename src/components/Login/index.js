@@ -5,6 +5,7 @@ import { IconButton } from 'react-native-paper';
 import { Input, Button, SocialIcon } from 'react-native-elements';
 import styles from './styles';
 import { useNavigation } from '@react-navigation/native';
+import InputTextMask from '../Form/InputTextMask';
 
 export default function Login() {
   const navigation = useNavigation();
@@ -19,15 +20,13 @@ export default function Login() {
 
       <View style={styles.containerItems}>
         <View style={styles.boxInput}>
-          <Input
+          <InputTextMask
             label="CPF"
-            labelStyle={{ color: '#ffff' }}
-            placeholderTextColor="#ffff"
+            icon="person"
             placeholder="999.999.999-99"
-            keyboardType="numeric"
+            mask="[000].[000].[000]-[00]"
             maxLength={11}
-            inputStyle={{ color: '#ffff' }}
-            leftIcon={<IconButton icon="account" color="#fafafa" size={28} />}
+            keyboardType="numeric"
           />
         </View>
         <View style={styles.boxButton}>

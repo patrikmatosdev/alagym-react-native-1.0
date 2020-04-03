@@ -13,9 +13,7 @@ export default function InputText(props) {
       underlineColor="transparent"
       keyboardType="name-phone-pad"
       theme={{
-        placeholder: {
-          left: 20,
-        },
+        roundness: 10,
         colors: {
           primary: '#ff8c00',
           background: '#ffff',
