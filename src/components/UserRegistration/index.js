@@ -1,9 +1,8 @@
 import React from 'react';
-import { View, Text, ImageBackground } from 'react-native';
+import { View, ImageBackground } from 'react-native';
 import styles from './styles';
 import FormRegistration from './FormRegistration';
 import Media from '../../assets/img/exercises.png';
-import { Button, SocialIcon } from 'react-native-elements';
 
 export default function UserRegistration() {
   return (
@@ -13,11 +12,6 @@ export default function UserRegistration() {
       </View>
       <View style={styles.containerForm}>
         <FormRegistration />
-      </View>
-      <View style={styles.containerButtons}>
-        <View style={styles.button}>
-          <Button title="Criar Conta" type="clear" />
-        </View>
       </View>
     </View>
   );

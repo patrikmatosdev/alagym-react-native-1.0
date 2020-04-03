@@ -6,23 +6,18 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffff',
   },
   containerHeader: {
-    flexBasis: 150,
+    flexBasis: 200,
     flexGrow: 0,
     flexShrink: 0,
     backgroundColor: '#24292e',
   },
   containerForm: {
     flex: 1,
+    padding: 30,
   },
   image: {
     height: '100%',
     resizeMode: 'cover',
-  },
-  containerButtons: {
-    padding: 10,
-  },
-  button: {
-    marginBottom: 10,
   },
 });
 

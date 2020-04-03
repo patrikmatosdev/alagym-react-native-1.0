@@ -23,7 +23,7 @@ export default function Login() {
             label="CPF"
             labelStyle={{ color: '#ffff' }}
             placeholderTextColor="#ffff"
-            placeholder="000.000.000-00"
+            placeholder="999.999.999-99"
             keyboardType="numeric"
             maxLength={11}
             inputStyle={{ color: '#ffff' }}
