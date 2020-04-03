@@ -1,14 +1,14 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import Login from '../components/Login/index';
-import UserRegistration from '../components/UserRegistration/index';
+import BottomStack from './BottomStack';
+import LoginStack from './LoginStack';
 
 const Stack = createStackNavigator();
 
-export default function LoginStack() {
+export default function CoreStack() {
   return (
     <Stack.Navigator
-      initialRouteName="Login"
+      initialRouteName="LoginStack"
       tabBarColor="#ffff"
       screenOptions={{
         headerStyle: {
@@ -18,19 +18,17 @@ export default function LoginStack() {
       }}
     >
       <Stack.Screen
-        name="Login"
-        component={Login}
+        name="LoginStack"
+        component={LoginStack}
         options={{
           headerShown: false,
         }}
       />
       <Stack.Screen
-        name="UserRegistration"
-        component={UserRegistration}
+        name="BottomStack"
+        component={BottomStack}
         options={{
-          headerTransparent: true,
-          headerShown: true,
-          title: 'Cadastrar',
+          headerShown: false,
         }}
       />
     </Stack.Navigator>

@@ -14,6 +14,10 @@ export default function Login() {
     navigation.navigate(routeName);
   };
 
+  const openDashboard = (routeName) => {
+    navigation.navigate(routeName);
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.containerHeader}>
@@ -69,6 +73,7 @@ export default function Login() {
             button={true}
             raised={true}
             title="Login com facebook"
+            onPress={() => openDashboard('BottomStack')}
           />
           <SocialIcon
             type="instagram"
