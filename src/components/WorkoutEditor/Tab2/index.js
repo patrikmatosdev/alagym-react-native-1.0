@@ -67,6 +67,7 @@ export default function Tab2() {
   return (
     <View style={styles.container}>
       <TextInput
+        mode="outlined"
         onBlur={() => onBlurInput()}
         onFocus={() => onFocusInput()}
         style={styles.input}

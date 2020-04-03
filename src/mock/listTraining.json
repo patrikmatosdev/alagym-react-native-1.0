@@ -1,0 +1,23 @@
+{
+  "Trainning": [
+    {
+      "title": "Treino A",
+      "name": "Abodômen, Bíceps, Dorsal, Ombro",
+      "observation": "",
+      "duration": 12,
+      "exercises": [
+        {
+          "exerciseId": null,
+          "title": "Puxada máquina",
+          "series": 3,
+          "repetitions": 12,
+          "media": {
+            "img": null,
+            "video": null,
+            "muscleImage": null
+          }
+        }
+      ]
+    }
+  ]
+}

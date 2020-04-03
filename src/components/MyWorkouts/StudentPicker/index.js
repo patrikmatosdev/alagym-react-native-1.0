@@ -16,6 +16,7 @@ export default function StudentPicker(props) {
   return (
     <View style={styles.container}>
       <TextInput
+        mode="outlined"
         onFocus={onFocusInput}
         onBlur={onBlurInput}
         type="outlined"
