@@ -17,12 +17,12 @@
 Uma tela que gerencia os treinos e os exercícios.
 | | |
 | --- | ---
-|![listaDeTreinos](/screenshot/listaTreino.gif) |![editorDeTreino](/screenshot/editorTreino.gif) |
+|<img src='./screenshot/listaTreino.gif' width='230'> |<img src='./screenshot/editorTreino.gif' width='230'> |
 
-![listaDeExercicios](/screenshot/listaDeExercicios.jpeg)
+| <img src='./screenshot/listaDeExercicios.jpeg' width='230'> |
 
 ## Perfil
 
-|                                    |                                                                                         |
-| ---------------------------------- | --------------------------------------------------------------------------------------- |
-| ![perfil](/screenshot/perfil.jpeg) | Uma tela para visualizar e editar as informações pessoais com suporte à foto de perfil. |
+|                                                  |                                                                                         |
+| ------------------------------------------------ | --------------------------------------------------------------------------------------- |
+| <img src='./screenshot/perfil.jpeg' width='230'> | Uma tela para visualizar e editar as informações pessoais com suporte à foto de perfil. |
