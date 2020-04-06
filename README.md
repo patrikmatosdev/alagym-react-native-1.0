@@ -1,4 +1,6 @@
-# ALAGYM MOBILE
+# Alagym React Native
+
+Front-end criado para melhorar a experiência dos usuários de uma academia de ginástica e musculação.
 
 ## Gerenciador de Treinos
 
