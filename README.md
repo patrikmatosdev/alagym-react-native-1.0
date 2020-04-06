@@ -2,15 +2,15 @@
 
 ## Autenticação / Cadastro
 
-| <img src='./screenshot/autenticacao.gif' width='230'> | Telas para login e cadastro de usuários. |
-| ----------------------------------------------------- | ---------------------------------------- |
+Telas para login e cadastro de usuários.
 
+<img src='./screenshot/autenticacao.gif' width='230'>
 
 ## Dashboard
 
-| <img src='./screenshot/dashboard.jpeg' width='230'> | Uma tela que mostra o resumo das outras funcionalidades. |
-| --------------------------------------------------- | -------------------------------------------------------- |
+Uma tela que mostra o resumo das outras funcionalidades.
 
+<img src='./screenshot/dashboard.jpeg' width='230'>
 
 ## Gerenciador de Treinos
 
@@ -22,6 +22,6 @@ Telas que mostram os treinos do aluno e também permitem que professores e perso
 
 ## Perfil
 
-| <img src='./screenshot/perfil.jpeg' width='230'> | Uma tela para visualizar e editar as informações pessoais com suporte à foto de perfil. |
-| ------------------------------------------------ | --------------------------------------------------------------------------------------- |
+Uma tela para visualizar e editar as informações pessoais com suporte à foto de perfil.
 
+<img src='./screenshot/perfil.jpeg' width='230'>
