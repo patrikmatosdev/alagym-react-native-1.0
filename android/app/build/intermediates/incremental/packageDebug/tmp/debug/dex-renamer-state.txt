@@ -1,4 +1,4 @@
-#Thu Apr 02 11:55:20 BRT 2020
+#Mon Apr 06 11:06:30 BRT 2020
 base.0=/home/p/Documentos/Projects/reactNative/alagym/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex
