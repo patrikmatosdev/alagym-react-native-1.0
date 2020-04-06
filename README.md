@@ -14,11 +14,11 @@
 
 ## Gerenciador de Treinos
 
-Uma tela que gerencia os treinos e os exercícios.
+Telas que mostram os treinos do aluno e também permitem que professores e personal trainers editem os treinos de seus alunos.
 | | |
 | --- | ---
 | <img src='./screenshot/listaTreino.gif' width='230'> |<img src='./screenshot/editorTreino.gif' width='230'> |
-<img src='./screenshot/listaDeExercicios.jpeg' width='230'> | Input que exibe a lista de exercícios.
+<img src='./screenshot/listaDeExercicios.jpeg' width='230'> | Os personal trainers podem visualizar e editar os treinos do aluno que quiser. |
 
 ## Perfil
 
