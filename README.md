@@ -17,7 +17,7 @@
 Uma tela que gerencia os treinos e os exercícios.
 | | |
 | --- | ---
-|<img src='./screenshot/listaTreino.gif' width='230'> |<img src='./screenshot/editorTreino.gif' width='230'> |
+| <img src='./screenshot/listaTreino.gif' width='230'> |<img src='./screenshot/editorTreino.gif' width='230'> |
 
 | <img src='./screenshot/listaDeExercicios.jpeg' width='230'> |
 
