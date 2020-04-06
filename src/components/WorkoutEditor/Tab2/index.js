@@ -7,6 +7,7 @@ import removeAccents from '../../../util/removeAccents';
 import ModeExercise from './ModeExercise';
 import { exeMode } from './ModeExercise/constants';
 import SeriesEditor from './SeriesEditor';
+import { ScrollView } from 'react-native-gesture-handler';
 
 const axios = require('axios');
 

@@ -6,6 +6,7 @@ import styles from './styles';
 import { useNavigation } from '@react-navigation/native';
 import InputTextMask from '../Form/InputTextMask';
 import InputText from '../Form/InputText/index';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 export default function Login() {
   const navigation = useNavigation();
@@ -57,13 +58,16 @@ export default function Login() {
             />
           </View>
           <View style={styles.boxButton}>
-            <Button
-              title="Cadastrar"
-              titleStyle={{ color: '#ffff' }}
-              type="clear"
-              //icon={<Icon name="account-box" size={28} color="#fff" />}
+            <TouchableOpacity
               onPress={() => openUserRegistration('UserRegistration')}
-            />
+            >
+              <Button
+                title="Cadastrar"
+                titleStyle={{ color: '#ffff' }}
+                type="clear"
+                //icon={<Icon name="account-box" size={28} color="#fff" />}
+              />
+            </TouchableOpacity>
           </View>
         </View>
 
