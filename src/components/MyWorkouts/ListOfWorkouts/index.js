@@ -5,6 +5,7 @@ import styles from './styles';
 import TrainingA from '../../../assets/img/treinoA.jpeg';
 import TrainingB from '../../../assets/img/treinoB.jpeg';
 import TrainingC from '../../../assets/img/treinoC.jpeg';
+import listTraining from '../../../mock/listTraining.json';
 
 export default function ListOfWorkouts() {
   const navigation = useNavigation();
@@ -48,6 +49,8 @@ export default function ListOfWorkouts() {
           </ImageBackground>
         </View>
       </TouchableOpacity>
+
+      <Text>{JSON.stringify(listTraining)}</Text>
     </View>
   );
 }

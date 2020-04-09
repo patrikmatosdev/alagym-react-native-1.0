@@ -91,6 +91,190 @@
           }
         }
       ]
+    },
+    {
+      "title": "Treino B",
+      "name": "Abdômen, Funcional, Pernas",
+      "observation": "",
+      "duration": 12,
+      "exercises": [
+        {
+          "exerciseId": 1,
+          "title": "Leg press 45",
+          "series": 3,
+          "repetitions": 10,
+          "machine": 9,
+          "media": {
+            "img": null,
+            "video": null,
+            "muscleImage": null
+          }
+        },
+        {
+          "exerciseId": 2,
+          "title": "Mesa flexora",
+          "series": 3,
+          "repetitions": 10,
+          "machine": 10,
+          "media": {
+            "img": null,
+            "video": null,
+            "muscleImage": null
+          }
+        },
+        {
+          "exerciseId": 3,
+          "title": "Stiff bara",
+          "series": 3,
+          "repetitions": 10,
+          "machine": 99,
+          "media": {
+            "img": null,
+            "video": null,
+            "muscleImage": null
+          }
+        },
+        {
+          "exerciseId": 4,
+          "title": "Afundo",
+          "series": 3,
+          "repetitions": 10,
+          "machine": 99,
+          "media": {
+            "img": null,
+            "video": null,
+            "muscleImage": null
+          }
+        },
+        {
+          "exerciseId": 5,
+          "title": "Cadeira abdutora",
+          "series": 3,
+          "repetitions": 15,
+          "machine": 5,
+          "media": {
+            "img": null,
+            "video": null,
+            "muscleImage": null
+          }
+        },
+        {
+          "exerciseId": 6,
+          "title": "Agachamento",
+          "series": 3,
+          "repetitions": 10,
+          "machine": 99,
+          "media": {
+            "img": null,
+            "video": null,
+            "muscleImage": null
+          }
+        },
+        {
+          "exerciseId": 7,
+          "title": "Abdominal Twist",
+          "series": 3,
+          "repetitions": 12,
+          "machine": 99,
+          "media": {
+            "img": null,
+            "video": null,
+            "muscleImage": null
+          }
+        }
+      ]
+    },
+    {
+      "title": "Treino C",
+      "name": "Lombar, Ombro, Peitoral, Tríceps",
+      "observation": "",
+      "duration": 12,
+      "exercises": [
+        {
+          "exerciseId": 1,
+          "title": "Supino haltres",
+          "series": 3,
+          "repetitions": 12,
+          "machine": 99,
+          "media": {
+            "img": null,
+            "video": null,
+            "muscleImage": null
+          }
+        },
+        {
+          "exerciseId": 2,
+          "title": "Pullover",
+          "series": 3,
+          "repetitions": 12,
+          "machine": 99,
+          "media": {
+            "img": null,
+            "video": null,
+            "muscleImage": null
+          }
+        },
+        {
+          "exerciseId": 3,
+          "title": "Crucifixo máquina",
+          "series": 3,
+          "repetitions": 12,
+          "machine": 26,
+          "media": {
+            "img": null,
+            "video": null,
+            "muscleImage": null
+          }
+        },
+        {
+          "exerciseId": 4,
+          "title": "Tríceps polia",
+          "series": 3,
+          "repetitions": 12,
+          "machine": 99,
+          "media": {
+            "img": null,
+            "video": null,
+            "muscleImage": null
+          }
+        },
+        {
+          "exerciseId": 5,
+          "title": "Tríceps testa barra W",
+          "series": 3,
+          "repetitions": 12,
+          "machine": 99,
+          "media": {
+            "img": null,
+            "video": null,
+            "muscleImage": null
+          }
+        },
+        {
+          "exerciseId": 6,
+          "title": "Desenvolvimento máquina aberto",
+          "series": 3,
+          "repetitions": 12,
+          "machine": 50,
+          "media": {
+            "img": null,
+            "video": null,
+            "muscleImage": null
+          }
+        },
+        {
+          "exerciseId": 7,
+          "title": "Hiperextensão lombar",
+          "series": 3,
+          "repetitions": 12,
+          "machine": 44,
+          "media": {
+            "img": null,
+            "video": null,
+            "muscleImage": null
+          }
+        }
+      ]
     }
   ]
 }

@@ -2,25 +2,6 @@ import React from 'react';
 import { TextInput, List } from 'react-native-paper';
 import { View } from 'react-native';
 import styles from './styles';
-import { Dropdown } from 'react-native-material-dropdown';
-
-const typesTraining = [
-  {
-    value: 'Construção Muscular',
-  },
-  {
-    value: 'Perda de peso',
-  },
-  {
-    value: 'Ganho em massa',
-  },
-  {
-    value: 'Ganhar força',
-  },
-  {
-    value: 'Iniciante (Levantamento de peso básico)',
-  },
-];
 
 export default function Tab1() {
   return (
